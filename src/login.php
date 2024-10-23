@@ -4,6 +4,8 @@ require './../config/database.php';
 
 global $pdo;
 
+$message = '';
+
 if (isset($_POST['email'], $_POST['password'])) {
     
     $email = $_POST['email'];
@@ -18,14 +20,14 @@ if (isset($_POST['email'], $_POST['password'])) {
     if ($user && password_verify($password, $user['password'])) {
         session_start();
         $_SESSION['username'] = $user['username'];
-        echo('reussi');
+        $message = '<div class="alert alert-success" role="alert">Connexion réussie !</div>';
         
-   
-        header('Location: ../home.php');
+        header('Location: ./home.php');
         exit(); 
     } else {
-        echo "Email ou mot de passe incorrect.";
+        $message = '<div class="alert alert-danger" role="alert">Email ou mot de passe incorrect.</div>';
     }
 }
 
 include './../templates/frontend/auth/login_views.php';
+?>

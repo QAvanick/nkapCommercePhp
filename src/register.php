@@ -23,7 +23,7 @@ if (isset($_POST['username'], $_POST['email'], $_POST['password'], $_POST['confi
         if ($stmt->execute()) {
             echo "Inscription réussie !";
             
-            header('Location: ../home.php');
+            header('Location: ./home.php');
             exit();
         } else {
             echo "Erreur lors de l'insertion.";

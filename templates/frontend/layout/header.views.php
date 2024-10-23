@@ -52,6 +52,7 @@ section {
     <title>E-commence</title>
 </head>
 <body>
+ 
 
 <?php
 include __DIR__ .'/_partial/navbar_top.views.php'
