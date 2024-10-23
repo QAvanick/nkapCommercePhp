@@ -21,7 +21,7 @@ include __DIR__ .'/../layout/header.views.php'
             <div class="col-md-6">
             
                 <div class="card p-4 shadow-sm shadow-lg p-3 mb-5 bg-body rounded">
-                    <h2 class="text-center"><i class="fa-solid fa-address-card"></i></h2>
+                    <h2 class="text-center text-success"><i class="fa-solid fa-address-card"></i></h2>
               <h2 class="mb-4 text-center">Inscription</h2>
                     <form action="./register.php" method="post">
                         <div class="form-group">

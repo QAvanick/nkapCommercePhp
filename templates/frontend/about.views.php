@@ -42,7 +42,7 @@
                 </div>
             </div>
 
-            <!-- Valeurs et mission -->
+
             <div class="col-md-6">
                 <div class="card text-center">
                     <div class="card-body">
