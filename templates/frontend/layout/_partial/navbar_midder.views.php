@@ -60,9 +60,19 @@
 </nav>
 <nav class="navbar navbar-dark bg-dark">
   <div class="container-fluid d-flex justify-content-center ">
-  <span class="navbar-brand mb-0 h1 text-white">⚡Bonnes affaires pour les fêtes sur tout⚡</span>
+  <span id="blinkText" class="navbar-brand mb-0 h1 text-success">⚡Bonnes affaires pour les fêtes sur tout⚡</span>
   </div>
 </nav>
+
+
+<script>function blinkText() {
+    const text = document.getElementById('blinkText');
+    setInterval(() => {
+        text.style.visibility = (text.style.visibility === 'hidden' ? '' : 'hidden');
+    }, 900); 
+}
+
+window.onload = blinkText;</script>
 
 
 
