@@ -20,12 +20,20 @@ if (isset($_POST['email'], $_POST['password'])) {
     if ($user && password_verify($password, $user['password'])) {
         session_start();
         $_SESSION['username'] = $user['username'];
-        $message = '<div class="alert alert-success" role="alert">Connexion réussie !</div>';
+        $message = '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+  connexion reussir avec success ! .
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>';
         
         header('Location: ./home.php');
         exit(); 
     } else {
-        $message = '<div class="alert alert-danger" role="alert">Email ou mot de passe incorrect.</div>';
+        $message = '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+  Email ou mot de passe incorrect. 
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>';
     }
 }
 
