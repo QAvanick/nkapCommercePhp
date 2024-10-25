@@ -60,7 +60,7 @@
 </nav>
 <nav class="navbar navbar-dark bg-dark">
   <div class="container-fluid d-flex justify-content-center ">
-  <span id="blinkText" class="navbar-brand mb-0 h1 text-success">⚡Bonnes affaires pour les fêtes sur tout⚡</span>
+  <span id="blinkText" class="navbar-brand mb-0 h1 text-white">⚡Bonnes affaires pour les fêtes sur tout⚡</span>
   </div>
 </nav>
 
