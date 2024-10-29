@@ -12,7 +12,7 @@ include __DIR__ .'/../layout/header.views.php';
             <div class="col-md-8">
                 <div class="card-body">
                     <h5 class="card-title">Réinitialisation de mot de passe</h5>
-                    <form action="verify_reset_code.php" method="post">
+                    <form action="new_password.php" method="post">
                         <div class="form-group">
                             <label for="reset_code">Code de réinitialisation:</label>
                             <input type="text" class="form-control" name="reset_code" required>
