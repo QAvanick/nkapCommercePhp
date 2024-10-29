@@ -26,11 +26,11 @@ include __DIR__ .'/../layout/header.views.php'
                     <form action="./register.php" method="post">
                         <div class="form-group">
                             <label for="name">Nom</label>
-                            <input type="text" class="form-control" id="name" name="username" placeholder="Votre nom" required>
+                            <input type="text" class="form-control " id="name" name="username" placeholder="Votre nom" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Votre email" required>
+                            <input type="email" class="form-control " id="email" name="email" placeholder="Votre email" required>
                         </div>
                         <div class="form-group">
                             <label for="password">Mot de passe</label>
@@ -41,6 +41,15 @@ include __DIR__ .'/../layout/header.views.php'
                             <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Confirmez votre mot de passe" required>
                         </div>
                         <button type="submit" class="btn btn-success btn-block">S'inscrire</button>
+                        <div class="form-check">
+                    <input class="form-check-input is-invalid  border border-success " type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+                   <label class="form-check-label fw-bold text-dark" for="invalidCheck3">
+                       Accepter les conditions générales
+                      </label>
+                     <div id="invalidCheck3Feedback" class="invalid-feedback fw-bold text-dark">
+                            Vous devez être d’accord avant de soumettre.
+                   </div>
+                     </div>
                     </form>
                     <div class="d-flex justify-content-around mt-3 ">
                        <p>Déjà inscrit ?</p><a href="login.php"> Se connecter</a>

@@ -39,7 +39,7 @@ include __DIR__ .'/../layout/header.views.php'
             </form>
             <div class="d-flex justify-content-between mt-4">
                 <a href="register.php">S'inscrire</a>
-                <a href="./reset_password.php">Mot de passe oublié ?</a>
+                <a href="./password_reset.php">Mot de passe oublié ?</a>
             </div>
         </div>
     </div>
