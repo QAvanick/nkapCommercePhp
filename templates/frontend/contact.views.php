@@ -38,6 +38,8 @@
                             <h2 class="text-center text-primary"><i class="fa-regular fa-id-card"></i></h2>
                             <h2 class="text-center">Contactez-nous</h2>
                             <form action="./contact.php" method="post">
+                            <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+                        
                                 <div class="mb-3">
                                     <label for="name">Nom</label>
                                     <input type="text" class="form-control" name="name" placeholder="Entrez votre nom" aria-label="Nom">
@@ -50,6 +52,7 @@
                                     <label for="exampleFormControlTextarea1" class="form-label">Message</label>
                                     <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3" aria-label="Message"></textarea>
                                 </div>
+                                
                                 <button type="submit" value="envoyer" class="btn btn-outline-primary btn-lg">Envoyer</button>
                             </form>
                         </div>
@@ -67,3 +70,12 @@
         </div>
     </div>
 </div>
+
+
+<script>
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6Ldy73AqAAAAAHsBKUR7xxUqds7LzV0_czfEDrNz', {action: 'submit'}).then(function(token) {
+            document.getElementById('g-recaptcha-response').value = token;
+        });
+    });
+</script>

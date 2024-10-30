@@ -6,6 +6,15 @@
     <link rel="stylesheet" href="../public/assets/css/bootstrap.css">
     <link rel="stylesheet" href="../public/assets/css/utils.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <script src="https://www.google.com/recaptcha/api.js?render=6Ldy73AqAAAAAHsBKUR7xxUqds7LzV0_czfEDrNz"></script>
+<script>
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6Ldy73AqAAAAAHsBKUR7xxUqds7LzV0_czfEDrNz', {action: 'homepage'}).then(function(token) {
+            // Vous pouvez envoyer le token à votre serveur ici si nécessaire
+        });
+    });
+</script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- Bootstrap CSS -->

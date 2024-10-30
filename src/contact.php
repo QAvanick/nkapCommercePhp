@@ -30,6 +30,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
+
+
+
+
+
+
+function verifyRecaptcha($recaptcha_response) {
+    $recaptcha_secret = '6Ldy73AqAAAAAGpqvl4A-BetrtsASer0Nwrt474E';
+    $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$recaptcha_secret&response=$recaptcha_response");
+    $response_keys = json_decode($response, true);
+    return intval($response_keys["success"]) === 1;
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $recaptcha_response = $_POST['g-recaptcha-response'];
+    if (verifyRecaptcha($recaptcha_response)) {
+        // Traitez le formulaire ici
+        echo 'Formulaire soumis avec succès.';
+    } else {
+        echo 'Veuillez vérifier le reCAPTCHA.';
+    }
+}
+
+
+
 require_once './../templates/frontend/contact.views.php';
 require_once './../templates/frontend/layout/footer.views.php';
 ?>
