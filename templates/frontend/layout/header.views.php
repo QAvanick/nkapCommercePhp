@@ -51,7 +51,16 @@ section {
     max-width: 800px;
     margin: auto;
 }
-
+body {
+    background-image: url('https://img.freepik.com/fotos-gratis/fundo-da-bandeira-americana-com-copyspace_23-2147838855.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
     </style>
 

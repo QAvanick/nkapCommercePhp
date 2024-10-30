@@ -28,7 +28,7 @@
 
 
 
-<div class="container " style="margin-bottom: 50px;">
+<div class="container background-image " style="margin-bottom: 50px;">
     <div class="row justify-content-center align-items-center" style="height: 100vh;"  >
         <div class="col-md-10"> 
             <div class="card" style="border-radius: 10px; box-shadow: 0 0 150px rgba(0, 0, 0, 0.1);">
