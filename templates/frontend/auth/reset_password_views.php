@@ -3,21 +3,24 @@
 include __DIR__ .'/../layout/header.views.php';
 ?>
 
-<div class="container mt-5" style="margin-bottom: 10rem;">
-    <div class="card">
+<div class="container mt-5" style="margin-bottom: 15rem;">
+    <div class="card shadow-sm">
         <div class="row no-gutters">
             <div class="col-md-4">
-                <img src="https://securityintelligence.com/wp-content/uploads/2014/10/businessconceptemailondi_115451.jpg" class="card-img" alt="Image">
+                <img src="https://www.perkins.org/wp-content/uploads/2017/10/Password-cover.png" class="card-img" alt="Image">
             </div>
             <div class="col-md-8">
                 <div class="card-body">
-                    <h5 class="card-title">Réinitialisation de mot de passe</h5>
-                    <form action="new_password.php" method="post">
+                    <form action="reset_password.php" method="post">
                         <div class="form-group">
-                            <label for="reset_code">Code de réinitialisation:</label>
+                            <label for="reset_code">Code de réinitialisation :</label>
                             <input type="text" class="form-control" name="reset_code" required>
                         </div>
-                        <button type="submit" class="btn btn-primary">Vérifier</button>
+                        <div class="form-group">
+                            <label for="password">Nouveau mot de passe :</label>
+                            <input type="password" class="form-control" name="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-outline-primary">Réinitialiser</button>
                     </form>
                 </div>
             </div>
