@@ -14,8 +14,8 @@
     </section>
     </section>
     <section id="notre-histoire">
-            <div class="card" style="  margin: 20px 0;  border-right: 5px solid green ;box-shadow: 0 14px 180px rgba(0, 0, 0, 0.1);">
-                <div class="row no-gutters">
+            <div class="card "  style="background-color: rgba(255, 255, 255, 0.5);" style="  margin: 20px 0;  border-right: 5px solid green ;box-shadow: 0 14px 180px rgba(0, 0, 0, 0.1);">
+                <div class="row no-gutters" >
                     <div class="col-md-6">
                         <img src="https://th.bing.com/th/id/OIG2.SsMW6rihU0EHJqMFslXg?pid=ImgGn" class="card-img-left" style=" width: 75%;
             object-fit: cover;" alt="Image représentant notre histoire">
@@ -32,7 +32,7 @@
         <section class="row" class="faq-container" style="max-width: 1800px;";>
             <!-- Nos produits et services -->
             <div class="col-md-6">
-                <div class="card text-center" style="margin: 20px 0;";>
+                <div class="card text-center"      style="background-color: rgba(255, 255, 255, 0.5);"          style="margin: 20px 0"; >
                     <div class="card-body">
                         <i class="fas fa-tshirt card-icon" style="font-size: 50px;
             color: green;";></i>
@@ -44,7 +44,7 @@
 
 
             <div class="col-md-6">
-                <div class="card text-center">
+                <div class="card text-center"style="background-color: rgba(255, 255, 255, 0.5);" >
                     <div class="card-body">
                         <i class="fas fa-bullseye card-icon" style="color: green; font-size:30px;" ></i>
                         <h2 class="section-title">Valeurs et mission</h2>

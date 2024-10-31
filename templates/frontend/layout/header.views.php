@@ -52,7 +52,7 @@ section {
     margin: auto;
 }
 body {
-    background-image: url('https://img.freepik.com/fotos-gratis/fundo-da-bandeira-americana-com-copyspace_23-2147838855.jpg');
+    background-image: url('https://images.unsplash.com/photo-1729955031370-88d645538891?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

@@ -20,25 +20,18 @@ include 'home/hero-section.views.php'
   <div class="card-body  ">
     <div class="row">
       <div class="col-md-6">
-<img  style="height:500px" ; src="https://i5.walmartimages.com/seo/Plus-Size-Lingerie-Set-for-Women-Sexy-Cross-Strappy-Lace-Up-Bra-Lace-High-Waisted-Underwear-Panty_2bb69c48-a97f-4850-9482-1dc938325ab2.0512176c8579fa81489d6329153541d2.jpeg" alt="" srcset="">
+<img  style="height:500px" ; src="https://www.usa-legende.com/cdn/shop/products/chemise-baseball-new-yorker_600x.jpg?v=1655674624" alt="" srcset="">
       </div>
       <div class="col-md-6">
-<h3>Ensemble de lingerie sexy pour femme</h3>
-<h2 class="text-danger mt-3">Prix:3000 FCFA</h2>
+<h3>Chemise Baseball New Yorker</h3>
+<h2 class="text-danger mt-3">Prix:7000 FCFA</h2>
 <i class="fa-solid fa-star text-warning"></i>
 <i class="fa-solid fa-star text-warning"></i>
 <i class="fa-solid fa-star text-warning"></i>
 <i class="fa-solid fa-star text-warning"></i>
 <i class="fa-solid fa-star-half-stroke text-warning"></i>
 <p class="mt-3 m"><strong>Decription</strong></p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, 
-  libero aspernatur enim sapiente nisi natus exercitationem? Aut,
-   numquam harum sit adipisci, ullam dolores sapiente vero doloribus 
-   libero aspernatur enim sapiente nisi natus exercitationem? Aut,
-   numquam harum sit adipisci, ullam dolores sapiente vero doloribus
-   libero aspernatur enim sapiente nisi natus exercitationem? Aut,
-   numquam harum sit adipisci, ullam dolores sapiente vero doloribus
-   libero blanditiis saepe exercitationem.</p>
+<p>La Chemise Baseball New Yorker est une chemise inspirée des uniformes de baseball classiques, parfaite pour un look sportif et urbain. Fabriquée en coton doux et respirant, elle offre un confort optimal et une grande durabilité. Disponible en plusieurs couleurs, elle s'adapte à toutes les occasions. Affichez votre passion pour le baseball avec style ! ⚾🗽.</p>
    <a  class="btn btn-outline-success"href="#">&nbsp Acheter &nbsp<i class="fa-solid fa-arrow-right-long"></i></a>
       </div>
     </div>

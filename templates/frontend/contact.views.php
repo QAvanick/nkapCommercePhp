@@ -1,8 +1,8 @@
 <div class="row justify-content-center mt-4">
                 <div class="col-12 col-md-10">
-                    <div class="card p-4" style="border-radius: 10px; box-shadow: 0 0 150px rgba(0, 0, 0, 0.1);">
+                    <div class="card p-4"  style="background-color: rgba(255, 255, 255, 0.5);"style="border-radius: 10px; box-shadow: 0 0 150px rgba(0, 0, 0, 0.1);">
                         <div class="row">
-                            <div class="col-md-4 text-center">
+                            <div class="col-md-4 text-center" >
                                 <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
                                 <h4 class="mt-2">Adresse</h4>
                                 <p class="text-primary">Yaoundé
@@ -31,10 +31,10 @@
 <div class="container background-image " style="margin-bottom: 50px;">
     <div class="row justify-content-center align-items-center" style="height: 100vh;"  >
         <div class="col-md-10"> 
-            <div class="card" style="border-radius: 10px; box-shadow: 0 0 150px rgba(0, 0, 0, 0.1);">
-                <div class="row g-0" style="background: #fff;  border-radius: 10px; box-shadow: 0 0 150px rgba(0, 0, 0, 0.1); border-left: 5px solid black;">
-                    <div class="col-md-6">
-                        <div class="card-body">
+            <div class="card"  style="border-radius: 10px; box-shadow: 0 0 150px rgba(0, 0, 0, 0.1);">
+                <div class="row g-0"   style="background: #fff;  border-radius: 10px; box-shadow: 0 0 150px rgba(0, 0, 0, 0.1); border-left: 5px solid black;">
+                    <div class="col-md-6"  >
+                        <div class="card-body" >
                             <h2 class="text-center text-primary"><i class="fa-regular fa-id-card"></i></h2>
                             <h2 class="text-center">Contactez-nous</h2>
                             <form action="./contact.php" method="post">
