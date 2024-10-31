@@ -34,6 +34,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
+require_once 'C:/wamp64/www/php/nkapCommercePhp/src/recaptcha/autoload.php';
+
+
 
 
 function verifyRecaptcha($recaptcha_response) {
@@ -44,6 +47,7 @@ function verifyRecaptcha($recaptcha_response) {
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    
     $recaptcha_response = $_POST['g-recaptcha-response'];
     if (verifyRecaptcha($recaptcha_response)) {
         // Traitez le formulaire ici
