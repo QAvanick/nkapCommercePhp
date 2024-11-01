@@ -12,9 +12,12 @@ include 'home/hero-section.views.php'
 <main class="mb-4">
  
 
-
+<header>
+<h2 class="text-center text-warning" >Produit de la semaine</h2>
+    </header>
 <div class="container mt-5 mb-4 " >
-  <h2 class="text-center">Produit de la semaine</h2>
+
+  
 
  <div class="card mb-4 " style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";>
   <div class="card-body  ">
@@ -41,6 +44,28 @@ include 'home/hero-section.views.php'
 
 
 </main>
+
+
+
+
+
+
+
+<div class="inner-banner mod" style="margin-bottom: 20px;">
+    <div class="container">
+        <div class="row justify-content-center align-items-start" style="height: 100%;">
+            <div class="col-lg-7 col-md-10">
+                <div class="content text-center">
+                    <h3 style=" font-size: 3.5rem;">Offre à durée limitée.</h3>
+                    <h2 style=" font-size: 3rem;">50% de réduction</h2>
+                    <a href="shop.html" class="btn btn-outline-success">&nbsp Acheter&nbsp <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 
 

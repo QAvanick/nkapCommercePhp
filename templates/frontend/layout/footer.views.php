@@ -1,4 +1,26 @@
 
+<div class="below-content">
+    <div class="col-full">
+        <div id="custom_html-2" class="widget_text widget widget_custom_html">
+            <span class="gamma widget-title"><i class="fa-solid fa-location-dot icon-spacing green-icon"></i>Livraison Gratuite</span>
+            <div class="textwidget custom-html-widget">
+                <p>Dans le monde entier, à partir de 90€</p>
+            </div>
+        </div>
+        <div id="custom_html-4" class="widget_text widget widget_custom_html">
+            <span class="gamma widget-title"><i class="fa-solid fa-award icon-spacing green-icon"></i>-10% de réduction</span>
+            <div class="textwidget custom-html-widget">
+                <p>Avec l'inscription à la Newsletter</p>
+            </div>
+        </div>
+        <div id="custom_html-5" class="widget_text widget widget_custom_html">
+       <span class="gamma widget-title"> <i class="fa-solid fa-lock icon-spacing green-icon"></i>Paiement 100% sécurisé</span>
+            <div class="textwidget custom-html-widget">
+            <p>MOMO / MasterCard / Visa/ OM</p>
+            </div>
+        </div>
+    </div>
+</div>
 
   <!-- Footer -->
   <footer class="bg-dark text-white pt-4">
