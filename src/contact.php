@@ -1,9 +1,24 @@
 
 <?php
-
-
+session_start(); 
 
 require_once './../templates/frontend/layout/header.views.php';
+
+// Définir la langue en fonction de l'URL
+if (isset($_GET['lang'])) {
+    $_SESSION['lang'] = $_GET['lang'];
+} elseif (!isset($_SESSION['lang'])) {
+    $_SESSION['lang'] = 'fr'; // Langue par défaut
+}
+
+// Inclure le fichier de langue approprié
+if ($_SESSION['lang'] == 'en') {
+    include('../lang/en.php');
+} else {
+    include('../lang/fr.php');
+}
+
+$current_url = $_SERVER['REQUEST_URI'];
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars($_POST['name']);
