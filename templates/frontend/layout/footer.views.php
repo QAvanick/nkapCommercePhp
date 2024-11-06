@@ -54,7 +54,7 @@
                 </div>
                 <div class="col-md-3">
                     <h5>Newsletter</h5>
-                    <form action="subscribe.php" method="post">
+                    <form action="./admin/subscribe.php" method="post">
                         <div class="mb-3">
                          <p>Inscrivez-vous à notre newsletter pour recevoir nos dernières nouvelles</p>
                             <input type="email" class="form-control" id="newsletterEmail" name="email"       placeholder="Entrez votre e-mail">

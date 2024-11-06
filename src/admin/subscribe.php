@@ -8,8 +8,7 @@ require './../../config/database.php';
 global $pdo;
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    var_dump($_POST);
-    die();
+    
     $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
 
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -37,5 +36,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-include './../../templates/admin/subscribe.admin.php';
+
 ?>

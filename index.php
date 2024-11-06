@@ -14,3 +14,15 @@ $titre=array('Contactez-nous','Contact us');
 $nom=array('Nom','Name');
 
 ?>
+<?php
+session_start();
+
+
+
+    if (isset($_SESSION['message'])) {
+        echo "<p>" . $_SESSION['message'] . "</p>";
+        // Supprimer le message après l'affichage
+        unset($_SESSION['message']);
+    }
+    
+?>
