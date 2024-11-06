@@ -2,7 +2,7 @@
 <html lang="?php echo $_SESSION['lang']; ?>">
 <head>
     <meta charset="UTF-8">
-    <title><?php echo $lang['PAGE_TITLE']; ?></title>
+    <title>E-Nkap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/assets/css/bootstrap.css">
     <link rel="stylesheet" href="../public/assets/css/utils.css">
