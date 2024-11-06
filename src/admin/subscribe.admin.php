@@ -10,4 +10,10 @@ try {
 } catch(PDOException $e) {
     echo "Erreur: " . $e->getMessage();
 }
+
+
+
+
+
+include './../../templates/admin/subscribe.detail.php';
 ?>

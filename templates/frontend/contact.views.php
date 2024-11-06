@@ -1,4 +1,28 @@
 
+
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+<ol class="breadcrumb" style="display: flex; justify-content: center;">
+  <li class="breadcrumb-item" style="margin: 0 5px;"><a href="#">Home</a></li>
+  <li class="breadcrumb-item active" aria-current="page" style="margin: 0 5px;">Contact</li>
+</ol>
+
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="row justify-content-center mt-4">
                 <div class="col-12 col-md-10">
                     <div class="card p-4"  style="background-color: rgba(255, 255, 255, 0.5);"style="border-radius: 10px; box-shadow: 0 0 150px rgba(0, 0, 0, 0.1);">

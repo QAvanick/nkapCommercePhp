@@ -32,10 +32,10 @@
                 <a class="nav-link" href="./prodocs_index.php"><i class="fa-solid fa-shop"></i> Produits</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./subscribe.php"><i class="fa-solid fa-envelope"></i> Liste des emails d'abonnés</a>
+                <a class="nav-link" href="./subscribe.admin.php"><i class="fa-solid fa-envelope"></i> Liste des emails d'abonnés</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./subscribe.php"><i class="fa-solid fa-envelope"></i>  Newsletter</a>
+                <a class="nav-link" href="./subscribe.php"><i class="fa-solid fa-envelope"></i> Newsletter</a>
             </li>
         </ul>
     </div>
