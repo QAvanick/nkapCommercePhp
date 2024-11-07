@@ -9,12 +9,27 @@
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
     <script src="https://www.google.com/recaptcha/api.js?render=6Ldy73AqAAAAAHsBKUR7xxUqds7LzV0_czfEDrNz"></script>
 <script>
+
+var element = document.getElementById('elementID');
+if (element) {
+    element.style.display = 'block';
+}
     grecaptcha.ready(function() {
         grecaptcha.execute('6Ldy73AqAAAAAHsBKUR7xxUqds7LzV0_czfEDrNz', {action: 'homepage'}).then(function(token) {
             // Vous pouvez envoyer le token à votre serveur ici si nécessaire
         });
     });
 </script>
+<script>
+        function showPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+            setTimeout(function() {
+                popup.style.display = "none";
+            }, 3000); // Le pop-up disparaît après 3 secondes
+        }
+    </script>
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -148,6 +163,22 @@ body {
   margin-right: 5px; 
 }
 
+.popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 87%;
+        transform: translateX(-50%);
+        background-color: #4CAF50;
+        color: white;
+        padding: 15px;
+        z-index: 1000;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+
+
     </style>
 
 
@@ -156,7 +187,7 @@ body {
     <title>E-commence</title>
 </head>
 <body>
- 
+ <div id="popup" class="popup">Message envoyé avec succès.</div>
 
 <?php
 include __DIR__ .'/_partial/navbar_top.views.php'

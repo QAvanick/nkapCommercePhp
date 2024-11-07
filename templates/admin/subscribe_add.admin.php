@@ -9,7 +9,7 @@ include __DIR__ .'/base/header.admin.php'
 
 <div class="container mt-5">
     <div class="d-flex justify-content-end">
-        <a class="btn btn-info mt-3" href="subscribe.detail.php">Retour</a>
+        <a class="btn btn-info mt-3" href="subscribe.admin.php"><i class="fa-solid fa-backward"></i>&nbsp Retour&nbsp</a>
     </div>
     <h2 class="text-center">Ajouter une EmailNewsletter</h2>
     <form action="subscribe.add.php" method="POST">

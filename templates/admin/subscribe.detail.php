@@ -16,7 +16,7 @@ include __DIR__ .'/base/header.admin.php'
         <div class="row">
             <div class="col-md-12">
                 <div class="d-flex justify-content-end mb-3">
-                    <a class="btn btn-info me-3" href="./subscribe.add.php">Ajouter un produit</a>
+                    <a class="btn btn-info me-3" href="./subscribe.add.php"> + Ajouter un produit</a>
                 </div>
                 <div class="table-responsive">
                     <table class="table table-striped table-bordered">
