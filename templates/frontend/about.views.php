@@ -1,7 +1,7 @@
 
 
 
-<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb ">
 <ol class="breadcrumb" style="display: flex; justify-content: center;">
   <li class="breadcrumb-item" style="margin: 0 5px;"><a href="#">Home</a></li>
   <li class="breadcrumb-item active" aria-current="page" style="margin: 0 5px;">A propos</li>
@@ -10,7 +10,7 @@
 </nav>
 
 
-<header style=" padding: 2rem; max-width: 1800px;margin: auto;";>
+<header style=" padding: 2rem; max-width: 1800px;margin: -20PX 0;";>
         <h1>À propos de nous</h1>
     </header>
     <section style="padding: 2rem;
