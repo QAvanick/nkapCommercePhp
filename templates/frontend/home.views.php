@@ -7,6 +7,11 @@ include __DIR__ .'/layout/header.views.php'
 
  <?php
 include 'home/hero-section.views.php'
+
+?>
+
+<?php
+include 'home/section_categories.php'
 ?>
 
 <main class="mb-4">

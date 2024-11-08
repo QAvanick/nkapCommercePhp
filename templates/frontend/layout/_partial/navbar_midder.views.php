@@ -26,16 +26,16 @@
           <a class="nav-link" href="#">Produits</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Catégories
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Vêtements</a>
-            <a class="dropdown-item" href="#">Accessoires</a>
-            <a class="dropdown-item" href="#">Chaussures</a>
-          </div>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Vêtements</a></li>
+            <li><a class="dropdown-item" href="#">Accessoires</a></li>
+            <li><a class="dropdown-item" href="#">Chaussures</a></li>
+            <li><a class="dropdown-item" href="#">Chapeaux</a></li>
+          </ul>
         </li>
-      
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item me-3">
@@ -55,9 +55,6 @@
   </div>
 </nav>
 
-
-
-</nav>
 <nav class="navbar navbar-dark bg-dark">
   <div class="container-fluid d-flex justify-content-center ">
   <span id="blinkText" class="navbar-brand mb-0 h1 text-white">⚡Bonnes affaires pour les fêtes sur tout⚡</span>

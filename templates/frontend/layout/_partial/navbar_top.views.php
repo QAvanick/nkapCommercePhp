@@ -33,6 +33,15 @@ $current_url = $_SERVER['REQUEST_URI'];
         <li class="nav-item">
           <a class="nav-link" href="./contact.php">Contact</a>
         </li>
+        <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+            </li>
         <li class="nav-item ml-4">
           <a class="btn btn-outline-primary" href="./login.php"><i class="fa-solid fa-right-to-bracket"></i> Connexion</a>
         </li>
