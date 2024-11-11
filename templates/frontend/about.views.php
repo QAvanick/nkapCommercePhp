@@ -31,7 +31,7 @@
                     <div class="col-md-6">
                         <div class="card-body">
                             <h2 class="section-title">Notre histoire</h2>
-                            <p>Notre entreprise a été fondée en 2023 avec la mission de fournir des vêtements de qualité et tendance à des prix abordables. Depuis, nous avons grandi pour devenir un acteur clé dans le secteur de la mode, offrant une large gamme de vêtements pour toutes les occasions.</p>
+                            <p>Notre entreprise a été fondée en 2022 avec la mission de fournir des vêtements de qualité et tendance à des prix abordables. Depuis, nous avons grandi pour devenir un acteur clé dans le secteur de la mode, offrant une large gamme de vêtements pour toutes les occasions.</p>
                         </div>
                     </div>
                 </div>
