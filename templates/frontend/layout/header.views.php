@@ -209,6 +209,37 @@ body {
             max-width: 150px;
             margin: 20px;
         }
+
+
+        .testimonial { margin-bottom: 30px;
+           
+         } 
+        .card-img-top_ { width: 100%; height: auto;
+            border-radius: 10%; object-fit: cover;
+        
+            width: 80px; /* Réduire la taille du cercle */ 
+            height: 80px; /* Réduire la taille du cercle */ 
+            border-radius: 50%; object-fit: cover; 
+            border-bottom: 3px solid red; /* Ajouter une bordure inférieure rouge */ 
+            margin: 0 auto; /* Centrer l'image */ display: block;}
+
+
+
+            .favorite-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    border: none;
+    color: red;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.favorite-btn:hover {
+    color: darkred;
+}
+
     </style>
 
 

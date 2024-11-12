@@ -45,7 +45,7 @@
           <i class="fa-light fa-user"></i>
         </li>
         <li class="nav-item me-3">
-          <i class="fa-thin fa-heart"></i>
+          <a href="./favories.php"><i class="fa-thin fa-heart"></i></a>
         </li>
         <li class="nav-item">
           <i class="fa-thin fa-cart-shopping"></i>
