@@ -1,78 +1,101 @@
-
 <?php
-include __DIR__ .'/layout/header.views.php'
-?>
-
-
-
- <?php
-include 'home/hero-section.views.php'
-
+include __DIR__ .'/layout/header.views.php';
 ?>
 
 <?php
-include 'home/section_categories.php'
+include 'home/hero-section.views.php';
 ?>
 
-<main class="mb-4">
- 
+<?php
+require dirname(__FILE__) . '/../../config/database.php';
 
-<header>
-<h2 class="text-center text-warning" >Produit de la semaine</h2>
-    </header>
-<div class="container mt-5 mb-4 " >
+global $pdo;
 
-  
+$sql = "SELECT * FROM categories LIMIT 5";
+$stmt = $pdo->prepare($sql);
+$stmt->execute();
 
- <div class="card mb-4 " style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";>
-  <div class="card-body  ">
-    <div class="row">
-      <div class="col-md-6">
-<img  style="height:500px" ; src="https://www.usa-legende.com/cdn/shop/products/chemise-baseball-new-yorker_600x.jpg?v=1655674624" alt="" srcset="">
-      </div>
-      <div class="col-md-6">
-<h3>Chemise Baseball New Yorker</h3>
-<h2 class="text-danger mt-3">Prix:7000 FCFA</h2>
-<i class="fa-solid fa-star text-warning"></i>
-<i class="fa-solid fa-star text-warning"></i>
-<i class="fa-solid fa-star text-warning"></i>
-<i class="fa-solid fa-star text-warning"></i>
-<i class="fa-solid fa-star-half-stroke text-warning"></i>
-<p class="mt-3 m"><strong>Decription</strong></p>
-<p>La Chemise Baseball New Yorker est une chemise inspirée des uniformes de baseball classiques, parfaite pour un look sportif et urbain. Fabriquée en coton doux et respirant, elle offre un confort optimal et une grande durabilité. Disponible en plusieurs couleurs, elle s'adapte à toutes les occasions. Affichez votre passion pour le baseball avec style ! ⚾🗽.</p>
-   <a  class="btn btn-outline-success"href="#">&nbsp Acheter &nbsp<i class="fa-solid fa-arrow-right-long"></i></a>
-      </div>
-    </div>
-  </div>
-
- </div>
-
-
-</main>
+$categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
 
 
+global $pdo;
+
+$sql = "SELECT p.id AS p_id, p.name AS p_name, p.price AS p_price, p.description AS p_description,
+        p.quantity AS p_quantity, p.image AS p_image, c.id AS c_id, c.titre AS c_name
+        FROM product AS p 
+        LEFT JOIN categories AS c ON p.category_id = c.id";
+$stmt = $pdo->prepare($sql);
+$stmt->execute();
+
+$products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
 
-<div class="inner-banner mod" style="margin-bottom: 20px;">
-    <div class="container">
-        <div class="row justify-content-center align-items-start" style="height: 100%;">
-            <div class="col-lg-7 col-md-10">
-                <div class="content text-center">
-                    <h3 style=" font-size: 3.5rem;">Offre à durée limitée.</h3>
-                    <h2 style=" font-size: 3rem;">50% de réduction</h2>
-                    <a href="shop.html" class="btn btn-outline-success">&nbsp Acheter&nbsp <i class="fa-solid fa-arrow-right-long"></i></a>
+// Regrouper les produits par catégorie
+$categories = [];
+foreach ($products as $product) {
+    $categories[$product['c_name']][] = $product;
+}
+?>
+
+
+<div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body custom-width">
+                        <h2 class="card-title text-danger"><i class="fa-brands fa-salesforce"></i>&nbsp;Votre Mode en un Clic.&nbsp;</h2>
+                        <p>E-nkap vous propose une large gamme de vêtements pour 
+                            toutes les occasions. Que vous soyez à la recherche de
+                             tenues décontractées, professionnelles ou de soirée, 
+                             nous avons ce qu’il vous faut. Découvrez les meilleures offres en ligne et en magasin,
+                             et profitez d’une expérience d’achat unique.</p>
+                        <div class="list-group">
+                            <?php foreach ($categories as $categoryName => $products): ?>
+                                <div class="list-group-item">
+                                    <h4 class="category-title"><i class="fa-regular fa-gem"></i><?php echo htmlspecialchars($categoryName); ?></h4>
+                                    <div class="row">
+                                        <?php foreach ($products as $product): ?>
+                                            <div class="col-md-4">
+                                                <div class="card product-card">
+                                                    <img src="<?php echo "../public".htmlspecialchars($product['p_image']); ?>" class="card-img-top" alt="<?php echo htmlspecialchars($product['p_name']); ?>">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title"><?php echo htmlspecialchars($product['p_name']); ?></h5>
+                                                        <p class="card-text">Prix: <?php echo htmlspecialchars($product['p_price']); ?> FCFA</p>
+                                                        <p class="card-text">Quantité: <?php echo htmlspecialchars($product['p_quantity']); ?></p>
+                                                        <p class="card-text"><?php echo htmlspecialchars($product['p_description']); ?></p>
+                                                        <a href="#" class="btn btn-primary">Acheter</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <?php endforeach; ?>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
 
 
+<?php
+include 'home/section_fin.php';
+?>
 
+
+
+<?php
+include 'home/parteners.php';
+?>
+
+<?php
+include 'home/temoignages.php';
+?>
 
 <?php
 include __DIR__ .'/layout/footer.views.php'

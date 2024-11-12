@@ -1,5 +1,6 @@
 
 <div class="below-content">
+    <div class="container-fluid"></div>
     <div class="col-full">
         <div id="custom_html-2" class="widget_text widget widget_custom_html">
             <span class="gamma widget-title"><i class="fa-solid fa-location-dot icon-spacing green-icon"></i>Livraison Gratuite</span>
@@ -21,9 +22,8 @@
         </div>
     </div>
 </div>
-
-  <!-- Footer -->
-  <footer class="bg-dark text-white pt-4">
+<!-- Footer -->
+<footer class="bg-dark text-white pt-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
@@ -76,7 +76,6 @@
        
 
     </footer>
-
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 

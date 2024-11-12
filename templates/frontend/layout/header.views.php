@@ -76,7 +76,16 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    
+    
 }
+
+.custom-width {
+        max-width: 100%; /* Ajustez ce pourcentage selon vos besoins */
+        
+    }
+
+
 .mod {
     display: block;
     unicode-bidi: isolate;
@@ -177,8 +186,29 @@ body {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
+  
+    .category-title {
+        color: #3498db; /* Remplacez par la couleur de votre choix */
+    }
+
+    .product-card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 20px;
+        }
+        .product-card img {
+            height: 200px;
+            object-fit: cover;
+        }
 
 
+        .partners-section {
+            padding: 50px 0;
+            background-color: #f9f9f9;
+        }
+        .partner-logo {
+            max-width: 150px;
+            margin: 20px;
+        }
     </style>
 
 
