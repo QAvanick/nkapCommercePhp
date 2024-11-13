@@ -50,3 +50,28 @@ $favorites = isset($_COOKIE['favorites']) ? json_decode($_COOKIE['favorites'], t
 <?php
 require_once './../templates/frontend/layout/footer.views.php';
 ?>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const favoriteIcons = document.querySelectorAll('.favorite-icon');
+
+    favoriteIcons.forEach(icon => {
+        icon.addEventListener('click', function(event) {
+            event.preventDefault();
+            const productId = this.getAttribute('data-id');
+            let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+            if (favorites.includes(productId)) {
+                favorites = favorites.filter(id => id !== productId);
+                this.querySelector('i').classList.remove('fa-solid');
+                this.querySelector('i').classList.add('fa-regular');
+            } else {
+                favorites.push(productId);
+                this.querySelector('i').classList.remove('fa-regular');
+                this.querySelector('i').classList.add('fa-solid');
+            }
+
+            localStorage.setItem('favorites', JSON.stringify(favorites));
+        });
+    });
+});
+</script>

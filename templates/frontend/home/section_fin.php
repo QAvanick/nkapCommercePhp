@@ -1,30 +1,129 @@
+<section class="banner d-flex justify-content-center align-items-center flex-column">
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/nRWYsFtr89Y" title="HIMRA - VÊTEMENTS (Clip Officiel)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  
+</section>
 
-<header>
-    <h2 class="text-center text-warning">Produit de la semaine</h2>
-</header>
-<div class="container mt-5 mb-4">
-    <div class="card mb-4" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-        <div class="card-body">
-            <div class="row">
-                <div class="col-md-6">
-                    <img style="height:500px;" src="https://www.usa-legende.com/cdn/shop/products/chemise-baseball-new-yorker_600x.jpg?v=1655674624" alt="">
+
+
+<div class="container-fluid mt-5 mb-4">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card_" >
+                <div class="card-body">
+                    <img style="height:400px; width:100%;" src="https://slimages.macysassets.com/is/image/MCY/products/5/optimized/21715015_fpx.tif?op_sharpen=1&wid=700&hei=855&fit=fit,1" alt="">
+                    <h4>Polo Ralph Lauren</h4>
                 </div>
-                <div class="col-md-6">
-                    <h3>Chemise Baseball New Yorker</h3>
-                    <h2 class="text-danger mt-3">Prix: 7000 FCFA</h2>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card_">
+                <div class="card-body">
+                    <img style="height:400px; width:100%;" src="https://theoutsideside.com/wp-content/uploads/2021/04/Chaqueta-de-b-isbol-de-estilo-Hip-Hop-para-hombre-abrigos-de-retales-con-estampado-de-800x800.jpg" alt="">
+                    <h4 >Blouson college /Bomber jack USA</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card_" >
+                <div class="card-body">
+                    <img style="height:400px; width:100%;" src="https://www.fixtout.fr/144899/pantalon-comfy-special-tronconneuse-protection-5-couches-avec-cordura-armortex-coolmax-guetre-type-a-classe-1-copare-solidur.jpg" alt="">
+                    <h4>Boyfriend</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="position-relative">
+    <header class="text-center" style="position: relative; z-index: 0;">
+        <h2 class="text-warning mb-0">Arrivage de la semaine🗽</h2>
+    </header>
+    <img src="https://st.depositphotos.com/2398103/4941/v/950/depositphotos_49417213-stock-illustration-vector-novelty-stamp.jpg" alt="Image de nouveauté" style="height: 200px; position: absolute; left:110PX; top: 50%; transform: translateY(-50%); z-index: 1;">
+</div>
+
+
+<div class="container-fluid mt-5 mb-4">
+    <div class="row">
+        <div class="col-md-3 mb-4">
+            <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                <div class="card-body">
+                    <img style="height:400px; width:100%;" src="https://www.usa-legende.com/cdn/shop/products/chemise-baseball-new-yorker_600x.jpg?v=1655674624" alt="">
+                    <h4>Chemise Baseball New Yorker</h4>
+                    <h5 class="text-danger mt-3">Prix: 7000 FCFA</h5>
                     <i class="fa-solid fa-star text-warning"></i>
                     <i class="fa-solid fa-star text-warning"></i>
                     <i class="fa-solid fa-star text-warning"></i>
                     <i class="fa-solid fa-star text-warning"></i>
                     <i class="fa-solid fa-star-half-stroke text-warning"></i>
                     <p class="mt-3"><strong>Description</strong></p>
-                    <p>La Chemise Baseball New Yorker est une chemise inspirée des uniformes de baseball classiques, parfaite pour un look sportif et urbain. Fabriquée en coton doux et respirant, elle offre un confort optimal et une grande durabilité. Disponible en plusieurs couleurs, elle s'adapte à toutes les occasions. Affichez votre passion pour le baseball avec style ! ⚾🗽.</p>
+                    <p>La Chemise Baseball New Yorker, en coton doux, offre confort et 
+                        durabilité. Parfaite pour un look sportif et urbain ⚾🗽.</p>
+                    <a class="btn btn-outline-success" href="#">&nbsp Acheter &nbsp<i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                <div class="card-body">
+                    <img style="height:400px; width:100%;" src="https://th.bing.com/th/id/R.08f5ed9b059b1dd87c5efd242220c1fd?rik=%2fzmDaFefdQy%2bQQ&pid=ImgRaw&r=0" alt="">
+                    <h4>Vans</h4>
+                    <h5 class="text-danger mt-3">Prix: 8000 FCFA</h5>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    <p class="mt-3"><strong>Description</strong></p>
+                    <p>La Vans Old Skool est une chaussure iconique, durable et 
+                        confortable, parfaite pour un style décontracté et urbain 🗽.</p>
+                    <a class="btn btn-outline-success" href="#">&nbsp Acheter &nbsp<i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                <div class="card-body">
+                    <img style="height:400px; width:100%;" src="https://www.cdiscount.com/pdt2/5/5/1/1/700x700/mp50907551/rw/minetom-jeans-homme-patchwork-couleur-bloc-denim-p.jpg" alt="">
+                    <h4>Boyfriend</h4>
+                    <h5 class="text-danger mt-3">Prix: 9000 FCFA</h5>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    <p class="mt-3"><strong>Description</strong></p>
+                    <p>Le pantalon boyfriend est ample, confortable et décontracté, inspiré 
+                        des jeans masculins pour un look tendance et décontracté.</p>
+                    <a class="btn btn-outline-success" href="#">&nbsp Acheter &nbsp<i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                <div class="card-body">
+                    <img style="height:400px; width:100%;" src="https://content.asos-media.com/-/media/homepages/mw/2024/november/11-gbl/mw_global_new_in_moment_870x1110.jpg" alt="">
+                    <h4>les derniers drops</h4>
+                    <h5 class="text-danger mt-3">Prix: 10000 FCFA</h5>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    <p class="mt-3"><strong>Description</strong></p>
+                    <p>Les derniers drops sont des collections exclusives et limitées, 
+                        souvent très attendues, disponibles pour une durée limitée.</p>
                     <a class="btn btn-outline-success" href="#">&nbsp Acheter &nbsp<i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 
 <div class="inner-banner mod" style="margin-bottom: 20px;">
     <div class="container">
