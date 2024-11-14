@@ -1,5 +1,5 @@
 <section class="banner d-flex justify-content-center align-items-center flex-column">
-    <iframe width="1280" height="720" src="https://www.youtube.com/embed/nRWYsFtr89Y" title="HIMRA - VÊTEMENTS (Clip Officiel)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="1050" height="720" src="https://www.youtube.com/embed/nRWYsFtr89Y" title="HIMRA - VÊTEMENTS (Clip Officiel)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   
 </section>
 
@@ -19,7 +19,7 @@
             <div class="card_">
                 <div class="card-body">
                     <img style="height:400px; width:100%;" src="https://theoutsideside.com/wp-content/uploads/2021/04/Chaqueta-de-b-isbol-de-estilo-Hip-Hop-para-hombre-abrigos-de-retales-con-estampado-de-800x800.jpg" alt="">
-                    <h4 >Blouson college /Bomber jack USA</h4>
+                    <h4 >Bomber jack USA</h4>
                 </div>
             </div>
         </div>
