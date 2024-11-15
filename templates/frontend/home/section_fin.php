@@ -46,14 +46,13 @@
     <img src="https://st.depositphotos.com/2398103/4941/v/950/depositphotos_49417213-stock-illustration-vector-novelty-stamp.jpg" alt="Image de nouveauté" style="height: 200px; position: absolute; left:110PX; top: 50%; transform: translateY(-50%); z-index: 1;">
 </div>
 
-
 <div class="container-fluid mt-5 mb-4">
-    <div class="row">
+    <div class="row justify-content-center">
         <div class="col-md-3 mb-4">
             <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                 <div class="card-body">
-                    <img style="height:400px; width:100%;" src="https://www.usa-legende.com/cdn/shop/products/chemise-baseball-new-yorker_600x.jpg?v=1655674624" alt="">
-                    <h4>Chemise Baseball New Yorker</h4>
+                    <img style="height:300px; width:100%;" src="https://www.usa-legende.com/cdn/shop/products/chemise-baseball-new-yorker_600x.jpg?v=1655674624" alt="">
+                    <h4>Chemise Baseball </h4>
                     <h5 class="text-danger mt-3">Prix: 7000 FCFA</h5>
                     <i class="fa-solid fa-star text-warning"></i>
                     <i class="fa-solid fa-star text-warning"></i>
@@ -62,7 +61,7 @@
                     <i class="fa-solid fa-star-half-stroke text-warning"></i>
                     <p class="mt-3"><strong>Description</strong></p>
                     <p>La Chemise Baseball New Yorker, en coton doux, offre confort et 
-                        durabilité. Parfaite pour un look sportif et urbain ⚾🗽.</p>
+                        durabilité. </p>
                     <a class="btn btn-outline-success" href="#">&nbsp Acheter &nbsp<i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
             </div>
@@ -70,25 +69,7 @@
         <div class="col-md-3 mb-4">
             <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                 <div class="card-body">
-                    <img style="height:400px; width:100%;" src="https://th.bing.com/th/id/R.08f5ed9b059b1dd87c5efd242220c1fd?rik=%2fzmDaFefdQy%2bQQ&pid=ImgRaw&r=0" alt="">
-                    <h4>Vans</h4>
-                    <h5 class="text-danger mt-3">Prix: 8000 FCFA</h5>
-                    <i class="fa-solid fa-star text-warning"></i>
-                    <i class="fa-solid fa-star text-warning"></i>
-                    <i class="fa-solid fa-star text-warning"></i>
-                    <i class="fa-solid fa-star text-warning"></i>
-                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
-                    <p class="mt-3"><strong>Description</strong></p>
-                    <p>La Vans Old Skool est une chaussure iconique, durable et 
-                        confortable, parfaite pour un style décontracté et urbain 🗽.</p>
-                    <a class="btn btn-outline-success" href="#">&nbsp Acheter &nbsp<i class="fa-solid fa-arrow-right-long"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 mb-4">
-            <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                <div class="card-body">
-                    <img style="height:400px; width:100%;" src="https://www.cdiscount.com/pdt2/5/5/1/1/700x700/mp50907551/rw/minetom-jeans-homme-patchwork-couleur-bloc-denim-p.jpg" alt="">
+                    <img style="height:300px; width:100%;" src="https://www.cdiscount.com/pdt2/5/5/1/1/700x700/mp50907551/rw/minetom-jeans-homme-patchwork-couleur-bloc-denim-p.jpg" alt="">
                     <h4>Boyfriend</h4>
                     <h5 class="text-danger mt-3">Prix: 9000 FCFA</h5>
                     <i class="fa-solid fa-star text-warning"></i>
@@ -98,7 +79,7 @@
                     <i class="fa-solid fa-star-half-stroke text-warning"></i>
                     <p class="mt-3"><strong>Description</strong></p>
                     <p>Le pantalon boyfriend est ample, confortable et décontracté, inspiré 
-                        des jeans masculins pour un look tendance et décontracté.</p>
+                        des jeans masculins pour un look .</p>
                     <a class="btn btn-outline-success" href="#">&nbsp Acheter &nbsp<i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
             </div>
@@ -106,7 +87,7 @@
         <div class="col-md-3 mb-4">
             <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                 <div class="card-body">
-                    <img style="height:400px; width:100%;" src="https://content.asos-media.com/-/media/homepages/mw/2024/november/11-gbl/mw_global_new_in_moment_870x1110.jpg" alt="">
+                    <img style="height:300px; width:100%;" src="https://content.asos-media.com/-/media/homepages/mw/2024/november/11-gbl/mw_global_new_in_moment_870x1110.jpg" alt="">
                     <h4>les derniers drops</h4>
                     <h5 class="text-danger mt-3">Prix: 10000 FCFA</h5>
                     <i class="fa-solid fa-star text-warning"></i>
@@ -116,14 +97,13 @@
                     <i class="fa-solid fa-star-half-stroke text-warning"></i>
                     <p class="mt-3"><strong>Description</strong></p>
                     <p>Les derniers drops sont des collections exclusives et limitées, 
-                        souvent très attendues, disponibles pour une durée limitée.</p>
+                        souvent .</p>
                     <a class="btn btn-outline-success" href="#">&nbsp Acheter &nbsp<i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 
 <div class="inner-banner mod" style="margin-bottom: 20px;">
     <div class="container">
