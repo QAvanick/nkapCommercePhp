@@ -11,16 +11,21 @@ require dirname(__FILE__) . '/../../config/database.php';
 
 global $pdo;
 
-$sql = "SELECT * FROM categories LIMIT 5";
-$stmt = $pdo->prepare($sql);
-$stmt->execute();
+$user_id = 1; // Remplacez par l'ID de l'utilisateur connecté
 
-$categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
+// Récupérer les favoris de l'utilisateur
+function recuperer_favoris($user_id) {
+    global $pdo;
+    $sql = "SELECT product_id FROM product_favorites WHERE user_id = ?";
+    $stmt = $pdo->prepare($sql);
+    $stmt->bindParam(1, $user_id, PDO::PARAM_INT);
+    $stmt->execute();
+    $favoris = $stmt->fetchAll(PDO::FETCH_COLUMN);
+    $stmt->closeCursor();
+    return $favoris;
+}
 
-
-
-
-global $pdo;
+$favoris = recuperer_favoris($user_id);
 
 $sql = "SELECT p.id AS p_id, p.name AS p_name, p.price AS p_price, p.description AS p_description,
         p.quantity AS p_quantity, p.image AS p_image, c.id AS c_id, c.titre AS c_name
@@ -30,8 +35,6 @@ $stmt = $pdo->prepare($sql);
 $stmt->execute();
 
 $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-
 
 // Regrouper les produits par catégorie
 $categories = [];
@@ -44,13 +47,13 @@ foreach ($products as $product) {
         <div class="col-12">
             <div class="card">
                 <div class="card-body custom-width">
-                    <h2 class="card-title text-danger"><a href="#" class="favorite-icon" data-id="<?php echo htmlspecialchars($product['p_id']); ?>"><i class="fa-regular fa-heart"></i></a>
-                    &nbsp;Votre Mode en un Clic.&nbsp;</h2>
-                    <p>E-nkap vous propose une large gamme de vêtements pour 
-                        toutes les occasions. Que vous soyez à la recherche de
-                         tenues décontractées, professionnelles ou de soirée, 
-                         nous avons ce qu’il vous faut. Découvrez les meilleures offres en ligne et en magasin,
-                         et profitez d’une expérience d’achat unique.</p>
+                    <h2 class="card-title text-danger">
+                        <span class="favorite-icon" data-id="<?php echo htmlspecialchars($product['p_id']); ?>">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        &nbsp;Votre Mode en un Clic.&nbsp;
+                    </h2>
+                    <p>E-nkap vous propose une large gamme de vêtements pour toutes les occasions. Que vous soyez à la recherche de tenues décontractées, professionnelles ou de soirée, nous avons ce qu’il vous faut. Découvrez les meilleures offres en ligne et en magasin, et profitez d’une expérience d’achat unique.</p>
                     <div class="list-group">
                         <?php foreach ($categories as $categoryName => $products): ?>
                             <div class="list-group-item">
@@ -66,7 +69,9 @@ foreach ($products as $product) {
                                                     <p class="card-text">Quantité: <?php echo htmlspecialchars($product['p_quantity']); ?></p>
                                                     <p class="card-text"><?php echo htmlspecialchars($product['p_description']); ?></p>
                                                     <a href="#" class="btn btn-primary">Acheter</a>
-                                                    <a href="#" class="btn btn-outline-danger favorite-btn"><i class="fa-regular fa-heart"></i></a>
+                                                    <span class="btn btn-outline-danger favorite-btn" data-id="<?php echo htmlspecialchars($product['p_id']); ?>">
+                                                        <i class="fa-regular fa-heart <?php echo in_array($product['p_id'], $favoris) ? 'fa-solid' : ''; ?>"></i>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </div>
@@ -81,12 +86,9 @@ foreach ($products as $product) {
     </div>
 </div>
 
-
 <?php
 include 'home/section_fin.php';
 ?>
-
-
 
 <?php
 include 'home/parteners.php';
@@ -97,13 +99,12 @@ include 'home/temoignages.php';
 ?>
 
 <?php
-include __DIR__ .'/layout/footer.views.php'
+include __DIR__ .'/layout/footer.views.php';
 ?>
-
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    const favoriteIcons = document.querySelectorAll('.favorite-icon');
+    const favoriteIcons = document.querySelectorAll('.favorite-icon, .favorite-btn');
 
     favoriteIcons.forEach(icon => {
         icon.addEventListener('click', function(event) {
@@ -122,6 +123,17 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             localStorage.setItem('favorites', JSON.stringify(favorites));
+
+            // Envoyer une requête AJAX pour mettre à jour les favoris dans la base de données
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', 'favories.php', true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    console.log(xhr.responseText);
+                }
+            };
+            xhr.send('product_id=' + productId + '&action=' + (favorites.includes(productId) ? 'add' : 'remove'));
         });
     });
 });

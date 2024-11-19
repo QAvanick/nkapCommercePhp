@@ -240,13 +240,59 @@ body {
     color: darkred;
 }
 
-
+.favorite { 
+    color: grey; cursor: pointer; 
+} 
+.favorite.active { 
+    color: red; 
+}
 
 .card_ { 
     border-right: 1px solid red;
      border-bottom: 1px solid red; }
 
     </style>
+
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const favoriteIcons = document.querySelectorAll('.favorite-icon, .favorite-btn');
+
+    favoriteIcons.forEach(icon => {
+        icon.addEventListener('click', function(event) {
+            event.preventDefault();
+            const productId = this.getAttribute('data-id');
+            let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+            if (favorites.includes(productId)) {
+                favorites = favorites.filter(id => id !== productId);
+                this.querySelector('i').classList.remove('fa-solid');
+                this.querySelector('i').classList.add('fa-regular');
+            } else {
+                favorites.push(productId);
+                this.querySelector('i').classList.remove('fa-regular');
+                this.querySelector('i').classList.add('fa-solid');
+            }
+
+            localStorage.setItem('favorites', JSON.stringify(favorites));
+
+            // Envoyer une requête AJAX pour mettre à jour les favoris dans la base de données
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', 'favories.php', true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    console.log(xhr.responseText);
+                }
+            };
+            xhr.send('product_id=' + productId + '&action=' + (favorites.includes(productId) ? 'add' : 'remove'));
+        });
+    });
+});
+</script>
+
 
 
 </head>
