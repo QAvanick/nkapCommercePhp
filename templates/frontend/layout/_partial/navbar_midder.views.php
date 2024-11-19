@@ -23,17 +23,17 @@
           <a class="nav-link" aria-current="page" href="./home.php">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Produits</a>
+          <a class="nav-link" href="./produits.php">Produits</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Catégories
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Vêtements</a></li>
-            <li><a class="dropdown-item" href="#">Accessoires</a></li>
-            <li><a class="dropdown-item" href="#">Chaussures</a></li>
-            <li><a class="dropdown-item" href="#">Chapeaux</a></li>
+            <li><a class="dropdown-item" href="./categories_hommes.php">Hommes </a></li>
+            <li><a class="dropdown-item" href="./categories_bijoux.php">Bijoux</a></li>
+            <li><a class="dropdown-item" href="./categories_chaussures.php">Chaussures</a></li>
+           
           </ul>
         </li>
       </ul>
