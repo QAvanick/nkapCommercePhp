@@ -67,7 +67,7 @@
                 <div class="col-md-12 text-center">
                     <ul class="list-inline">
                         <li class="list-inline-item"><a href="#" class="text-white">Conditions d'utilisation</a></li>
-                        <li class="list-inline-item"><a href="#" class="text-white">Politique de confidentialité</a></li>
+                        <li class="list-inline-item"><a href="./politique_confidentialité.php" class="text-white">Politique de confidentialité</a></li>
                     </ul>
                     <p class="mt-2">© 2024 Votre Entreprise. Tous droits réservés.</p>
                 </div>

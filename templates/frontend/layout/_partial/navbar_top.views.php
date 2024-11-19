@@ -25,7 +25,7 @@ $current_url = $_SERVER['REQUEST_URI'];
       </ul>
       <ul class="navbar-nav justify-content-end">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Expédition</a>
+          <a class="nav-link" aria-current="page" href="./expedition.php">Expédition</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./about.php">A propos</a>
