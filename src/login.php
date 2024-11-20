@@ -19,14 +19,15 @@ if (isset($_POST['email'], $_POST['password'])) {
 
     if ($user && password_verify($password, $user['password'])) {
         session_start();
+        $_SESSION['user_id'] = $user['id']; // Définir l'ID utilisateur dans la session
         $_SESSION['username'] = $user['username'];
-        $message = '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-        <i class="fa-solid fa-triangle-exclamation"></i>
-  connexion reussir avec success ! .
+        $message = '<div class="alert alert-success alert-dismissible fade show" role="alert">
+        <i class="fa-solid fa-check-circle"></i>
+  Connexion réussie avec succès !
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>';
         
-        header('Location: ./home.php');
+        header('Location: ./home.php'); // Rediriger vers la page de profil
         exit(); 
     } else {
         $message = '<div class="alert alert-danger alert-dismissible fade show" role="alert">

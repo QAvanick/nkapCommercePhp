@@ -1,3 +1,4 @@
+<?php if (session_status() == PHP_SESSION_NONE) { session_start(); } require_once './../config/database.php'; ?>
 <!DOCTYPE html>
 <html lang="?php echo $_SESSION['lang']; ?>">
 <head>
@@ -81,8 +82,7 @@ body {
 }
 
 .custom-width {
-        max-width: 100%; /* Ajustez ce pourcentage selon vos besoins */
-        
+        max-width: 100%; 
     }
 
 
@@ -185,7 +185,18 @@ body {
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-
+    .popup_ {
+            display: none;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
   
     .category-title {
         color: #3498db; /* Remplacez par la couleur de votre choix */
@@ -300,6 +311,9 @@ document.addEventListener('DOMContentLoaded', function() {
     <title>E-commence</title>
 </head>
 <body>
+
+
+<div id="popup_" class="popup_">Informations mises à jour avec succès!</div>
  <div id="popup" class="popup">Message envoyé avec succès.</div>
 
 <?php
