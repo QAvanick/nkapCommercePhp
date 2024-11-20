@@ -19,29 +19,36 @@ $username = $user['username'];
 $email = $user['email'];
 ?>
 
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb" style="display: flex; justify-content: center;">
+        <li class="breadcrumb-item" style="margin: 0 5px;"><a href="./home.php">Accueil</a></li>
+        <li class="breadcrumb-item active" aria-current="page" style="margin: 0 5px;">profil</li>
+    </ol>
+</nav>
 
-    <div class="container mt-3">
-        <div class="row justify-content-center">
-            <div class="col-12">
-                <div class="card shadow-sm rounded">
-                    <div class="card-body">
-                        <h2 class="card-title text-success">Profil Utilisateur</h2>
-                        <form action="update_profile.php" method="POST">
-                            <div class="form-group">
-                                <label for="username">Nom d'utilisateur :</label>
-                                <input type="text" class="form-control" id="username" name="username" value="<?php echo htmlspecialchars($username); ?>" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email :</label>
-                                <input type="email" class="form-control" id="email" name="email" value="<?php echo htmlspecialchars($email); ?>" required>
-                            </div>
-                            <button type="submit" class="btn btn-primary mt-3">Mettre à jour</button>
-                        </form>
-                    </div>
+<div class="container" >
+    <div class="row justify-content-center">
+        <div class="col-12" style="margin-top: -20px; ">
+            <div class="card shadow-sm rounded">
+                <div class="card-body">
+                    <h2 class="card-title text-success">Profil Utilisateur</h2>
+                    <form action="update_profile.php" method="POST">
+                        <div class="form-group">
+                            <label for="username">Nom d'utilisateur :</label>
+                            <input type="text" class="form-control" id="username" name="username" value="<?php echo htmlspecialchars($username); ?>" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email :</label>
+                            <input type="email" class="form-control" id="email" name="email" value="<?php echo htmlspecialchars($email); ?>" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-3">Mettre à jour</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
 
     <script>
     document.addEventListener('DOMContentLoaded', function() {
