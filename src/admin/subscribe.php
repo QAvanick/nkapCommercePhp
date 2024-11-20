@@ -13,23 +13,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt->bindParam(':email', $email);
             $stmt->execute();
 
-            $_SESSION['message'] = '<div class="alert alert-success alert-dismissible fade show" role="alert">
-            <i class="fa-solid fa-check-circle"></i> Vous êtes abonné avec succès!
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>';
+            $_SESSION['message'] = 'Vous êtes abonné avec succès!';
         } catch(PDOException $e) {
-            $_SESSION['message'] = '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-            <i class="fa-solid fa-triangle-exclamation"></i> Erreur: ' . $e->getMessage() . '
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>';
+            $_SESSION['message'] = 'Erreur: ' . $e->getMessage();
         }
 
         $pdo = null;
     } else {
-        $_SESSION['message'] = '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-        <i class="fa-solid fa-triangle-exclamation"></i> Adresse e-mail invalide.
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>';
+        $_SESSION['message'] = 'Adresse e-mail invalide.';
     }
 
     header('Location: ./../home.php');

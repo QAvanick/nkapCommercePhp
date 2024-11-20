@@ -263,10 +263,27 @@ body {
      border-bottom: 1px solid red; }
 
 
+     .popup__ { display: none; 
+        position: fixed; 
+        top: 20px; right: 20px; 
+        background-color: #4CAF50;
+         color: white; 
+         padding: 15px; 
+         border-radius: 5px; 
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+         z-index: 1000; }
 
-
-
-     
+          .popup- {
+            display: none; 
+            position: fixed; 
+            top: 20px; 
+            right: 20px; 
+            background-color: #4CAF50; 
+            color: white; padding: 15px; 
+            border-radius: 5px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            z-index: 1000;
+        }
     </style>
 
 
@@ -309,7 +326,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-
+<script> document.addEventListener('DOMContentLoaded', function() { 
+    const popup = document.getElementById('popup__'); if (popup.textContent.trim() !== '') 
+    { popup.style.display = 'block'; setTimeout(function() 
+        { popup.style.display = 'none'; }, 3000); 
+        <?php unset($_SESSION['messages']); ?> } }); </script>
 
 </head>
 
@@ -320,6 +341,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div id="popup_" class="popup_">Informations mises à jour avec succès!</div>
  <div id="popup" class="popup">Message envoyé avec succès.</div>
+
+
+</div> <div id="popup-" class="popup-"><?php echo isset($_SESSION['message']) ? $_SESSION['message'] : ''; ?></div>
+
+
+
+
+<script> document.addEventListener('DOMContentLoaded', function()
+ { const popup = document.getElementById('popup-'); 
+    if (popup.textContent.trim() !== '') 
+    { popup.style.display = 'block'; setTimeout(function() 
+        { popup.style.display = 'none'; }, 3000);
+        <?php unset($_SESSION['message']); ?> } }); </script>
+
+
+
+
+  <div id="popup__" class="popup__"><?php echo isset($_SESSION['message']) ? $_SESSION['message'] : ''; ?></div>
+  <script> document.addEventListener('DOMContentLoaded', function() { const popup = document.getElementById('popup__'); if (popup.textContent.trim() !== '') { popup.style.display = 'block'; setTimeout(function() { popup.style.display = 'none'; }, 3000);
+   <?php unset($_SESSION['message']); ?> } }); </script>
+
 
 <?php
 include __DIR__ .'/_partial/navbar_top.views.php'

@@ -3,13 +3,6 @@ session_start();
 include __DIR__ .'/layout/header.views.php';
 ?>
 
-<?php
-// Afficher le message de la variable de session
-if (isset($_SESSION['message'])) {
-    echo $_SESSION['message'];
-    unset($_SESSION['message']);
-}
-?>
 
 <?php
 include 'home/hero-section.views.php';

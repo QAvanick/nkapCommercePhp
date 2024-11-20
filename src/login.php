@@ -4,7 +4,7 @@ require './../config/database.php';
 
 global $pdo;
 
-$message = '';
+session_start();
 
 if (isset($_POST['email'], $_POST['password'])) {
     
@@ -18,23 +18,14 @@ if (isset($_POST['email'], $_POST['password'])) {
     $user = $stmt->fetch(PDO::FETCH_ASSOC); 
 
     if ($user && password_verify($password, $user['password'])) {
-        session_start();
         $_SESSION['user_id'] = $user['id']; // Définir l'ID utilisateur dans la session
         $_SESSION['username'] = $user['username'];
-        $message = '<div class="alert alert-success alert-dismissible fade show" role="alert">
-        <i class="fa-solid fa-check-circle"></i>
-  Connexion réussie avec succès !
-  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>';
+        $_SESSION['messages'] = 'Connexion réussie avec succès!';
         
-        header('Location: ./home.php'); // Rediriger vers la page de profil
+        header('Location: ./home.php'); // Rediriger vers la page d'accueil
         exit(); 
     } else {
-        $message = '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-        <i class="fa-solid fa-triangle-exclamation"></i>
-  Email ou mot de passe incorrect. 
-  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>';
+        $_SESSION['message'] = 'Email ou mot de passe incorrect.';
     }
 }
 
