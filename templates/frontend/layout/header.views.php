@@ -39,16 +39,18 @@ if (element) {
 <!-- Bootstrap Bundle with Popper -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 <style>
-.navbar { 
+.navbar-fixed { 
     position: fixed!important;
     top:100PX; width: 100%; 
     z-index: 1000; 
+   
 }
 #navbar3 { top: 50px; 
  }
 
-#navbar2 { top: 0px; 
+#navbar2 { top:0; 
  }
+ 
 
         .login-container {
             display: flex;
@@ -87,8 +89,8 @@ body {
     height: 100vh;
     width: 100%;
     margin: 0;
-    padding: 0;
-    
+   
+    padding-top: 100px;
     
 }
 
@@ -295,6 +297,15 @@ body {
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
             z-index: 1000;
         }
+
+
+    .form-control { 
+
+        padding-right: 30px; 
+     } 
+     .fa-magnifying-glass { 
+        pointer-events: none; 
+     }
     </style>
 
 

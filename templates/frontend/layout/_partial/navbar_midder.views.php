@@ -1,7 +1,17 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de Navigation</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
 
-<nav class="navbar navbar-expand-lg bg-white" id="navbar3" >
+  </head>
+
+<body>
+<nav class="navbar navbar-expand-lg bg-white navbar-fixed " id="navbar3"  >
   <div class="container">
     <a class="navbar-brand" href="./home.php">E-Nkap</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,8 +39,14 @@
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item me-3">
-          <i class="fa-light fa-magnifying-glass"></i>
+        <form class="d-flex position-relative" role="search"> 
+          <input class="form-control me-2" type="search" placeholder="Nom de la categorie" aria-label="Search"> <i class="fa-light fa-magnifying-glass position-absolute" style="right: 130px; top: 50%; transform: translateY(-50%);"></i>
+          <input class="form-control me-2" type="search" placeholder="Nom du produit" aria-label="Search"><i class="fa-light fa-magnifying-glass position-absolute" style="right:340px; top: 50%; transform: translateY(-50%);"></i>
+          <button class="btn btn-outline-success" type="submit">Rechercher</button> </form>
+      
+          
         </li>
+        
         
         <li class="nav-item me-3">
           <a href="./favories.php"><i class="fa-thin fa-heart"></i></a>

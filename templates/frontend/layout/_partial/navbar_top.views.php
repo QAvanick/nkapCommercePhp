@@ -12,9 +12,9 @@ $current_url = $_SERVER['REQUEST_URI'];
 ?>
 
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar2" >
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-fixed " id="navbar2"  >
         <div class="container">
-            <a class="navbar-brand text-primary" href="./home.php"><i class="fa-thin fa-truck me-2"></i>livraison gratuit</a>
+            <a class="navbar-brand text-primary" href="./home.php"><i class="fa-thin fa-truck me-2"></i>livraison gratuite</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
