@@ -39,6 +39,17 @@ if (element) {
 <!-- Bootstrap Bundle with Popper -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 <style>
+.navbar { 
+    position: fixed!important;
+    top:100PX; width: 100%; 
+    z-index: 1000; 
+}
+#navbar3 { top: 50px; 
+ }
+
+#navbar2 { top: 0px; 
+ }
+
         .login-container {
             display: flex;
             justify-content: center;
