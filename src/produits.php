@@ -4,16 +4,30 @@ require './../config/database.php';
 
 global $pdo;
 
+
 // Récupérer tous les produits
 $sql = "SELECT p.id AS p_id, p.name AS p_name, p.price AS p_price, p.description AS p_description,
         p.quantity AS p_quantity, p.image AS p_image, c.id AS c_id, c.titre AS c_name
         FROM product AS p 
         LEFT JOIN categories AS c ON p.category_id = c.id";
-$stmt = $pdo->prepare($sql);
+
+if(isset($_GET['search'])){
+    $search = '%' . $_GET['search'] . '%';
+    $sql .= " WHERE p.name LIKE :search";
+    $stmt = $pdo->prepare($sql);
+    $stmt->bindParam(':search', $search, PDO::PARAM_STR);
+} else {
+    $stmt = $pdo->prepare($sql);
+}
+
 $stmt->execute();
 
 $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
+
+
+
+
 
 <div class="container mt-5">
     <div class="row justify-content-center">

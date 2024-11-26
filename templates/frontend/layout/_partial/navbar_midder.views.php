@@ -39,9 +39,9 @@
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item me-3">
-        <form  method="GET" class="d-flex position-relative" role="search"> 
+        <form action="./produits.php" method="GET" class="d-flex position-relative" role="search"> 
 
-          <input class="form-control me-2" type="search" placeholder="Nom du produit" aria-label="Search"><i class="fa-light fa-magnifying-glass position-absolute" style="right:140px; top: 50%; transform: translateY(-50%);"></i>
+          <input class="form-control me-2" name="search" type="search" placeholder="Nom du produit" aria-label="Search" required ><i class="fa-light fa-magnifying-glass position-absolute" style="right:140px; top: 50%; transform: translateY(-50%);"></i>
           <button class="btn btn-outline-success" type="submit">Rechercher</button> </form>
       
           
