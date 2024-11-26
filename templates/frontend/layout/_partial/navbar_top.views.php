@@ -25,8 +25,8 @@ $current_url = $_SERVER['REQUEST_URI'];
                             <img src="https://flagpedia.net/data/flags/w580/fr.webp" class="drapeau" alt="Français" /> Français
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="<?php echo $current_url; ?>?lang=fr" target="_self"><img src="https://flagpedia.net/data/flags/w580/fr.webp" class="drapeau" alt="Français" /> Français</a></li>
-                            <li><a class="dropdown-item" href="<?php echo $current_url; ?>?lang=en" target="_self"><img src="https://flagpedia.net/data/flags/w580/gb.webp" class="drapeau" alt="Anglais" /> Anglais</a></li>
+                            <li ><a class="dropdown-item" href="<?php echo $current_url; ?>?lang=fr" target="_self"><img src="https://flagpedia.net/data/flags/w580/fr.webp" class="drapeau" alt="Français" /> Français</a></li>
+                            <li ><a class="dropdown-item" href="<?php echo $current_url; ?>?lang=en" target="_self"><img src="https://flagpedia.net/data/flags/w580/gb.webp" class="drapeau" alt="Anglais" /> Anglais</a></li>
                         </ul>
                     </li>
                 </ul>

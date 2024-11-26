@@ -49,6 +49,8 @@ if (element) {
  }
 
 #navbar2 { top:0; 
+
+    z-index: 1200; 
  }
  
 
@@ -184,6 +186,17 @@ body {
   height: auto;
   margin-right: 5px; 
 }
+
+
+.dropdown-menu { 
+    
+    z-index: 1050; 
+} .navbar { 
+    position: relative; 
+} 
+
+
+
 
 .popup {
         display: none;
