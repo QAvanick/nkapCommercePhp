@@ -10,7 +10,7 @@
 </nav>
 
 
-<header style=" padding: 2rem; max-width: 1800px;margin: -16PX 0;";>
+<header style=" padding: 2rem; max-width: 2000px;margin: -16PX 0;";>
         <h1>À propos de nous</h1>
     </header>
     <section style="padding: 2rem;

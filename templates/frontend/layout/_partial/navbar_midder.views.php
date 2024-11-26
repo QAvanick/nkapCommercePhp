@@ -11,7 +11,7 @@
   </head>
 
 <body>
-<nav class="navbar navbar-expand-lg bg-white navbar-fixed " id="navbar3"  >
+<nav class="navbar navbar-expand-lg bg-dark-subtle navbar-fixed " id="navbar3"  >
   <div class="container">
     <a class="navbar-brand" href="./home.php">E-Nkap</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,9 +39,9 @@
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item me-3">
-        <form class="d-flex position-relative" role="search"> 
-          <input class="form-control me-2" type="search" placeholder="Nom de la categorie" aria-label="Search"> <i class="fa-light fa-magnifying-glass position-absolute" style="right: 130px; top: 50%; transform: translateY(-50%);"></i>
-          <input class="form-control me-2" type="search" placeholder="Nom du produit" aria-label="Search"><i class="fa-light fa-magnifying-glass position-absolute" style="right:340px; top: 50%; transform: translateY(-50%);"></i>
+        <form  method="GET" class="d-flex position-relative" role="search"> 
+
+          <input class="form-control me-2" type="search" placeholder="Nom du produit" aria-label="Search"><i class="fa-light fa-magnifying-glass position-absolute" style="right:140px; top: 50%; transform: translateY(-50%);"></i>
           <button class="btn btn-outline-success" type="submit">Rechercher</button> </form>
       
           
@@ -60,9 +60,9 @@
 
 </nav>
 
-<nav class="navbar navbar-dark bg-dark" >
+<nav class="navbar navbar-dark bg-dark-subtle" >
   <div class="container-fluid d-flex justify-content-center ">
-  <span id="blinkText" class="navbar-brand mb-0 h1 text-white">⚡Bonnes affaires pour les fêtes sur tout⚡</span>
+  <span id="blinkText" class="navbar-brand mb-0 h1 text-danger">⚡Bonnes affaires pour les fêtes sur tout⚡</span>
   </div>
 </nav>
 
