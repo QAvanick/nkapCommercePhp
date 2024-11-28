@@ -3,13 +3,11 @@
 
 
 
-
 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
 <ol class="breadcrumb" style="display: flex; justify-content: center;">
-  <li class="breadcrumb-item" style="margin: 0 5px;"><a href="./home.php">Accueil</a></li>
-  <li class="breadcrumb-item active" aria-current="page" style="margin: 0 5px;">Contact</li>
+  <li class="breadcrumb-item" style="margin: 0 5px;"><a href="./home.php"><?php echo $lang['HOME']; ?></a></li>
+  <li class="breadcrumb-item active" aria-current="page" style="margin: 0 5px;"><?php echo $lang['CONTACT']; ?></li>
 </ol>
-
 </nav>
 
 

@@ -48,7 +48,7 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                             <p class="card-text">Prix: <?php echo htmlspecialchars($product['p_price']); ?> FCFA</p>
                                             <p class="card-text">Quantité: <?php echo htmlspecialchars($product['p_quantity']); ?></p>
                                             <p class="card-text"><?php echo htmlspecialchars($product['p_description']); ?></p>
-                                            <a href="#" class="btn btn-primary">Acheter</a>
+                                            <a href="./payment.php" class="btn btn-primary">Acheter</a>
                                             <span class="btn btn-outline-danger favorite-btn" data-id="<?php echo htmlspecialchars($product['p_id']); ?>"><i class="fa-regular fa-heart"></i></span>
                                         </div>
                                     </div>
