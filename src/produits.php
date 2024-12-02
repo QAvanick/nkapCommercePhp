@@ -45,10 +45,10 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                         <img src="<?php echo "../public".htmlspecialchars($product['p_image']); ?>" class="card-img-top" alt="<?php echo htmlspecialchars($product['p_name']); ?>">
                                         <div class="card-body">
                                             <h5 class="card-title"><?php echo htmlspecialchars($product['p_name']); ?></h5>
-                                            <p class="card-text">Prix: <?php echo htmlspecialchars($product['p_price']); ?> FCFA</p>
+                                            <p class="card-text text-danger">Prix: <?php echo htmlspecialchars($product['p_price']); ?> FCFA</p>
                                             <p class="card-text">Quantité: <?php echo htmlspecialchars($product['p_quantity']); ?></p>
                                             <p class="card-text"><?php echo htmlspecialchars($product['p_description']); ?></p>
-                                            <a href="./payment.php" class="btn btn-primary">Acheter</a>
+                                            <a href="./payment.php" class="btn btn-warning"><i class="fas fa-shopping-cart"></i>&nbsp Acheter &nbsp</a>
                                             <span class="btn btn-outline-danger favorite-btn" data-id="<?php echo htmlspecialchars($product['p_id']); ?>"><i class="fa-regular fa-heart"></i></span>
                                         </div>
                                     </div>

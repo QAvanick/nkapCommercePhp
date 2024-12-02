@@ -62,7 +62,7 @@
                     <p class="mt-3"><strong>Description</strong></p>
                     <p>La Chemise Baseball New Yorker, en coton doux, offre confort et 
                         durabilité. </p>
-                    <a class="btn btn-outline-success" href="#">&nbsp Acheter &nbsp<i class="fa-solid fa-arrow-right-long"></i></a>
+                    <a class="btn btn-outline-success" href="#"><i class="fas fa-shopping-cart"></i>&nbsp Acheter &nbsp<i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
             </div>
         </div>
@@ -80,7 +80,7 @@
                     <p class="mt-3"><strong>Description</strong></p>
                     <p>Le pantalon boyfriend est ample, confortable et décontracté, inspiré 
                         des jeans masculins pour un look .</p>
-                    <a class="btn btn-outline-success" href="#">&nbsp Acheter &nbsp<i class="fa-solid fa-arrow-right-long"></i></a>
+                    <a class="btn btn-outline-success" href="#"><i class="fas fa-shopping-cart"></i>&nbsp Acheter &nbsp<i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
             </div>
         </div>
@@ -98,7 +98,7 @@
                     <p class="mt-3"><strong>Description</strong></p>
                     <p>Les derniers drops sont des collections exclusives et limitées, 
                         souvent .</p>
-                    <a class="btn btn-outline-success" href="#">&nbsp Acheter &nbsp<i class="fa-solid fa-arrow-right-long"></i></a>
+                    <a class="btn btn-outline-success" href="#"><i class="fas fa-shopping-cart"></i>&nbsp Acheter &nbsp<i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
             </div>
         </div>
@@ -112,7 +112,7 @@
                 <div class="content text-center">
                     <h3 style="font-size: 3.5rem;">Offre à durée limitée.</h3>
                     <h2 style="font-size: 3rem;">50% de réduction</h2>
-                    <a href="shop.html" class="btn btn-outline-success">&nbsp Acheter&nbsp <i class="fa-solid fa-arrow-right-long"></i></a>
+                    <a href="shop.html" class="btn btn-outline-success"><i class="fas fa-shopping-cart"></i>&nbsp Acheter&nbsp <i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
             </div>
         </div>
